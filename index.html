@@ -147,10 +147,10 @@
             
             if (groupByThree) {
               setCurrentGroup(prev => {
+                const newGroup = [...prev, card];  
                 if (newGroup.length === 3) {
                   return [];
                 }
-                const newGroup = [...prev, card];
                 return newGroup;
               });
             }
